@@ -47,6 +47,9 @@ public class GameArena extends JPanel implements Runnable, KeyListener, MouseLis
 	private Map<RenderingHints.Key, Object> renderingHints;
 	private boolean rendered = false;
 	private Image backgroundImage = null;
+
+	Spaceship spaceship;
+
 	/**
 	 * Create a view of a GameArena.
 	 * 
@@ -58,6 +61,11 @@ public class GameArena extends JPanel implements Runnable, KeyListener, MouseLis
 		this.init(width, height, true);
 	}
 
+	public void addSpaceship(Spaceship spaceship){
+		this.spaceship = spaceship;
+	}
+	
+
 	/**
 	 * Create a view of a GameArena.
 	 * 
@@ -68,6 +76,7 @@ public class GameArena extends JPanel implements Runnable, KeyListener, MouseLis
 	public GameArena(int width, int height, boolean createWindow)
 	{
 		this.init(width, height, createWindow);
+		// this.spaceship = spaceship;
 	}
 
 	/**

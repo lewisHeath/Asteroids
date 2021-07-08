@@ -10,8 +10,8 @@ public class Rectangle
 	// Feel free to more instance variables if you think it will 
 	// support your work... 
 	
-	private double xPosition;			// The X coordinate of this Rectangle
-	private double yPosition;			// The Y coordinate of this Rectangle
+	public double xPosition;			// The X coordinate of this Rectangle
+	public double yPosition;			// The Y coordinate of this Rectangle
 	private double width;				// The width of this Rectangle
 	private double height;				// The height of this Rectangle
 	private int layer;				// The layer this Rectangle is on.
